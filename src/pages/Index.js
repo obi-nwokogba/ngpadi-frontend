@@ -30,7 +30,7 @@ function Index(props) {
     return props.user.map((user) => (
       <div key={user._id} className="person">
         <Link to={`/user/${user._id}`}><h1>{user.displayname}</h1></Link>
-        <img src={user.image} alt={user.name} />
+        <img src={user.image} alt={user.displayname} />
         <h3>{user.displayname}</h3>
         <h3>{user.email}</h3>
         <h3>{user.location}</h3>
@@ -65,9 +65,9 @@ function Index(props) {
           placeholder="title"
           onChange={handleChange}
         />
-        <input type="submit" value="Create Person" />
+        <input type="submit" value="Create User" />
       </form>
-      {props.people ? loaded() : loading()}
+      {props.user ? loaded() : loading()}
     </section>
   );
 }

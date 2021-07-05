@@ -1,10 +1,10 @@
 import { useState } from "react";
 function Show(props) {
   const id = props.match.params.id;
-  const people = props.people;
-  const person = people.find(p => p._id === id);
+  const user = props.user;
+  const singleuser = user.find(p => p._id === id);
 
-  const [ editForm, setEditForm ] = useState(person);
+  const [ editForm, setEditForm ] = useState(singleuser);
 
   // handleChange function for form
   const handleChange = event => {
@@ -13,21 +13,21 @@ function Show(props) {
 
   const handleSubmit = event => {
     event.preventDefault();
-    props.updatePeople(editForm);
+    props.updateUser(editForm);
     props.history.push("/");
   }
 
-  const removePerson = () => {
-    props.deletePeople(person._id);
+  const removeUser = () => {
+    props.deleteUser(singleuser._id);
     props.history.push("/");
   }
 
   return (
     <div className="person">
-      <h1>{person.name}</h1>
-      <h2>{person.title}</h2>
-      <img src={person.image} alt={person.name} />
-      <button id="delete" onClick={removePerson}>
+      <h1>{singleuser.name}</h1>
+      <h2>{singleuser.title}</h2>
+      <img src={singleuser.image} alt={singleuser.name} />
+      <button id="delete" onClick={removeUser}>
         DELETE
       </button>
       <form onSubmit={handleSubmit}>
@@ -52,7 +52,7 @@ function Show(props) {
           placeholder="title"
           onChange={handleChange}
         />
-        <input type="submit" value="Update Person" />
+        <input type="submit" value="Update User" />
       </form>
     </div>
   )

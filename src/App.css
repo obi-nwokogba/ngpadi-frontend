@@ -1,10 +1,20 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+margin:0 auto;
+  width:800px;
+  background-color:red;
+}
+
+.App {
+  text-align: center;
+  margin:0 auto;
+  display:block;
+  width:700px;
+  background-color:white;
+  padding:20px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -28,11 +38,19 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainlogo{
+  width:200px;
+  height:200px;
+  display:block;
+}
+
+input{
+  padding:6px;
+  border-bottom:solid 3px #3D8B57;
+  border-width:0px 0px 3px 0px;
+  display:block;
+}
+
+input.button{
+
 }
