@@ -57,6 +57,9 @@ function Main(props) {
                 <Route exact path="/">
                     <Index user={user} createUser={createUser} />
                 </Route>
+                <Route exact path="/seed">
+                    <Index user={user} createUser={createUser} />
+                </Route>
                 <Route
                     path="/user/:id"
                     render={(rp) => (
