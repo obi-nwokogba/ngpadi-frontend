@@ -6,7 +6,7 @@ import Show from "../pages/Show";
 function Main(props) {
     const [user, setUser] = useState(null);
 
-    const URL = "http://localhost:4000/people/";
+    const URL = "http://localhost:4000/user/";
 
     const getUser = async () => {
         const response = await fetch(URL);

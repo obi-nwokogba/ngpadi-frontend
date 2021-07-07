@@ -25,6 +25,7 @@ function Show(props) {
 
    return (
            <div className="person">
+   <h1>Edit Your Profile</h1>
               <h1>{singleuser.displayname}</h1>
               <h2>{singleuser.email}</h2>
            
@@ -39,7 +40,6 @@ function Show(props) {
                     placeholder="Your Name"
                     onChange={handleChange}
                     />
-           
                  <input
                     type="text"
                     value={editForm.email}

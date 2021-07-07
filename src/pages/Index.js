@@ -45,14 +45,18 @@ function Index(props) {
   // LOADED FUNCTION
   const loaded = () => {
     return props.user.map((user) => (
-      <div key={user._id} className="person">
+      <div key={user._id} className="userbox">
         <Link to={`/user/${user._id}`}><h1>{user.displayname}</h1></Link>
-        <h3>{user.displayname}</h3>
-        <h3>{user.email}</h3>
-        <h3>{user.location}</h3>
-        <h3>{user.status}</h3>
-        <h3>{user.profilepicurl}</h3>
-        <h3>{user.timejoined}</h3>
+        <p class="label1">EMAIL</p>
+        <p>{user.email}</p>
+        <p class="label1">LOCATION</p>
+        <p>{user.location}</p>
+        <p class="label1">STATUS</p>
+        <p>{user.status}</p>
+        <p class="label1">PROFILE PIC URL</p>
+        <p>{user.profilepicurl}</p>
+        <p class="label1">TIME JOINED</p>
+        <p>{user.timejoined}</p>
       </div>
     ));
   };
@@ -63,7 +67,7 @@ function Index(props) {
   return (
     <section>
 
-    <h2>Sign Up</h2>
+    <h1 className="pageheader">Sign Up</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
