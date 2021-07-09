@@ -4,7 +4,7 @@ function Header(props) {
    return (
            <nav className="nav">
               <Link to="/">
-              <div><img src="/img/logo_svg.svg" className="mainlogo" /></div>
+              <div><img src="/img/ngpadi_logo_green_svg.svg" className="mainlogo" /></div>
               <div className="navbarcontainer">
                  <Link to="/">Home</Link>
                  <Link to="/createpost">Post Something</Link>
