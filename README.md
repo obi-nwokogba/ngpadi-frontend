@@ -1,9 +1,12 @@
 # NGPadi
 
-Project 3 by Obi Nwokogba.
+
+![NGPadi](https://i.imgur.com/gGQFnko.png)
+
+*Project 3 by Obi Nwokogba - July 9 2021.*
 
 ##Introduction
-This is an app I have created as a full-stack MERN app - MongoDB, Express, React, NodeJS. This app aims to be a bulletin board where users can post links, photos, or text that they find interesting and want to share with others on the site. The name 'NGPadi' translates to 'Nigerian Friend'. NG is the short form of Nigeria, and 'Padi' is a popular Nigerian slang for really close friend. 
+This is an app I have created as a full-stack MERN app - MongoDB, Express, React, NodeJS. This app aims to be a bulletin board where users can post links, photos, or text that they find interesting and want to share with others on the site. The name 'NGPadi' translates to 'Nigerian Friend'. NG is the acronym for Nigeria, and 'Padi' is a popular Nigerian slang for really close friend. 
 
 ## Technologies Used
 - HTML5
@@ -15,12 +18,12 @@ This is an app I have created as a full-stack MERN app - MongoDB, Express, React
 
 ##Screenshots
 
-## Wireframe
+![Screenshot 1](https://i.imgur.com/zhDMCFt.png)
 
 
-## ERD and Schema
+## ERD + Schema
 ![ERD of the Models](https://i.imgur.com/v1pB8RI.png)
-This app uses primarily two models
+This app uses primarily two models - USERS and POSTS. The next iteration will see the addition of a VOTES model which will determine what's displayed on the home page.
 
 ## Getting Started
 Please click [HERE](http://ngpadi.herokuapp.com/) to launch the live, working app!
@@ -36,6 +39,8 @@ The back-end is also hosted on Heroku at this address. However, please keep in m
 - I want to be able to join this site.
 - I want to be able to post content.
 - I would like to see posts by others.
+- I want to be able to vote up on Posts that I like!
+- I would like to be able to Sign Out when I am done.
 
 
 ## Unsolved Problems

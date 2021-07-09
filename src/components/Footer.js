@@ -7,7 +7,7 @@ function Footer(props) {
               <div>
                  </div>
               <div className="footernavbarcontainer">
-              <img src="/img/ngpadi_logo_black_svg.svg" className="footerlogo" />
+              <img src="/img/ngpadi_logo_black_svg.svg" className="footerlogo" alt="NGPadi" />
               <br />
                  <Link to="/">Home</Link>
                  <Link to="/createpost">Post Something</Link>

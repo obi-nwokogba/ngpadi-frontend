@@ -13,35 +13,8 @@ import {Link} from "react-router-dom"
 // ===================================
 
 function Members(props) {
-  // state to hold formData
-  const [newForm, setNewForm] = useState({
-    displayname: "",
-    email: "",
-    location: "",
-    status: "",
-    profilepicurl: "",
-    timejoined: ""
-  });
 
-  // handleChange function for form
-  //const handleChange = (event) => {
-   // setNewForm({ ...newForm, [event.target.name]: event.target.value });
-  // };
 
-  // handle submit function for form
-  /*
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    props.createUser(newForm);
-    setNewForm({
-      displayname: "",
-      email: "",
-      location: "",
-      status: "",
-      profilepicurl: "",
-      timejoined: ""
-    });
-  }; */
 
   // LOADED FUNCTION
   const loaded = () => {

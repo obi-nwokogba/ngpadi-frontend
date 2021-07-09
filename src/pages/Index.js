@@ -18,7 +18,7 @@ function Index(props) {
     const loaded = () => {
         return props.post.map((post) => (
 
-
+<div class="postcontainer">
             <div key={post._id} className="postbox">
         <Link to={`/post/${post._id}`}><h2 class="posttitle">{post.posttitle}</h2></Link>
         
@@ -33,6 +33,16 @@ function Index(props) {
 
         <p>{post.posttext}</p>
       </div>
+<div class="votingcontainer">
+
+<i class="votingicon fa fa-chevron-circle-up fa-2x"></i>
+<i class="votingicon fa fa-chevron-circle-down fa-2x"></i>
+<i class="votingicon fa fa-heart fa-2x" aria-hidden="true"></i>
+
+
+</div></div>
+
+
         ));
     };
 

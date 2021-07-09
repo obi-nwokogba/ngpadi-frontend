@@ -1,17 +1,5 @@
 import { useState } from "react";
-import {Link} from "react-router-dom"
-
-// ===================================
-// USER SCHEMA FOR REFERENCE
-/*
-  displayname: String,
-    email: String,
-    password: String,
-    location: String,
-    status: String,
-    profilepicurl: String,
-    timejoined: String */
-// ===================================
+//import {Link} from "react-router-dom"
 
 function SignIn(props) {
   // state to hold formData
@@ -36,10 +24,6 @@ function SignIn(props) {
   };
 
 
-
-  const loading = () => {
-    return <h1>Index Line 42 - Loading...</h1>;
-  };
   return (
     <section class="signincontainer">
 
@@ -48,23 +32,21 @@ function SignIn(props) {
         <input
           type="text"
           value={newForm.email}
-          name="displayname"
-          placeholder="Your Name"
+          name="Email address"
+          placeholder="Email address"
           onChange={handleChange}
         />
         <input
-          type="text"
+          type="password"
           value={newForm.password}
           name="email"
-          placeholder="Email Address"
+          placeholder="Password"
           onChange={handleChange}
         />
         
         
         <input type="submit" value="Sign In" className="button1 abunate_animated animate__heartBeat" />
       </form>
-      
-      {/* {props.user ? loaded() : loading()} */}
     </section>
   );
 }

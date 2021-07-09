@@ -71,7 +71,7 @@ h1.pageheader{
    margin-left:10px;
 }
 
-input {
+input, select {
    padding: 11px;
    padding-left:14px;
    border-bottom: solid 2px #4AA669;
@@ -158,15 +158,23 @@ p.username1{
  
  .postbox{
     border-left:solid 5px #82e0ef;
+    border-right:solid 2px #82e0ef;
+    border-bottom:solid 2px #82e0ef;
+    border-right:top 2px #82e0ef;
+    border-top:solid 2px #82e0ef;
     padding-left:15px;
     line-height:0.6em;
     margin-bottom:35px;
     padding-top:0px;
+    border-radius:13px;
+    padding:13px;
+    transition:0.2s;
+    flex-grow:6;
  }
  
  .postbox:hover{
     background-color:#e6ffff;
-    border-left-color:#13A944;
+    border-color:#13A944;
  }
  
  .posttitle{
@@ -219,4 +227,25 @@ p.username1{
     justify-content: center;
     margin:0 auto;
     align-items: center;
+ }
+
+ .postcontainer{
+    display:flex;
+    flex-direction:columns;
+ }
+
+ .votingcontainer{
+    display:flex;
+    flex-direction:column;
+    flex-grow: 1
+ }
+
+ .votingicon{
+    color:#6DD7FF;
+    cursor:pointer
+ }
+
+ .votingicon:hover{
+    color:#ff527a !important;
+    margin-bottom:20px !important;
  }
