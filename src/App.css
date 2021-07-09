@@ -26,6 +26,8 @@ body {
    padding: 20px;
    padding-left:40px;
    font-family: 'Source Sans Pro', sans-serif;
+   border-left: solid 10px #CFEED9;
+   padding-top:130px;
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -39,6 +41,17 @@ h1.pageheader{
    font-size:2.2em;
 }
 
+.nav {
+   position: fixed;
+   top: 0;
+   width:690px;
+   background:#fdfdfd;
+   box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.142);
+   margin-left:-40px;
+   border-top:solid 8px #8dc8ff;
+   
+ }
+
 .App-header {
    background-color: #282c34;
    min-height: 100vh;
@@ -51,14 +64,17 @@ h1.pageheader{
 }
 
 .mainlogo {
-   width: 200px;
-   height: 100px;
+   width: 177px;
+   height: 90px;
    display: block;
+   margin-top:0px;
+   margin-left:10px;
 }
 
 input {
-   padding: 9px;
-   border-bottom: solid 3px #4AA669;
+   padding: 11px;
+   padding-left:14px;
+   border-bottom: solid 2px #4AA669;
    border-width: 0px 0px 3px 0px;
    display: block;
    background: #FAFAFA;
@@ -66,6 +82,7 @@ input {
    margin-bottom: 10px;
    font-family: 'Source Sans Pro', sans-serif;
    font-size:0.9em;
+   border-radius:7px;
 }
 
 .button1 {
@@ -84,22 +101,31 @@ input {
 }
 
 .navbarcontainer{
-   border-bottom:solid 3px gray;
+   /* border-bottom:solid 3px #70e663; */
    display:flex;
    justify-content: space-between;
    align-items: stretch;
+   margin-top:-10px;
 }
 
 .navbarcontainer > a {
-   color:black !important;
+   color:#515151 !important;
    border-bottom:none;
    text-decoration: none !important;
    flex-grow: 1;
    padding:10px;
+   transition:0.23s;
+   text-align:left;
+   border-top: solid 1px #dddddd;
+   border-right: solid 1px #dddddd;
+   text-transform: uppercase;
+   font-size:0.8em;
 }
 
 .navbarcontainer > a:hover{
-   background-color:#CFEED9;
+   background-color:#35B560;
+   color:white !important;
+   font-weight:600;
 }
 
 p.label1{
@@ -112,3 +138,75 @@ p.label1{
 p.username1{
    font-weight:500;
 }
+
+.profileContainer{
+
+}
+
+.profileLeftSide{
+   padding:20px;
+   display:flex;
+   flex-direction:column;
+}
+                          
+ .profileRightSide{
+    padding:20px;
+   display:flex;
+   flex-direction:column;
+   border-left:solid 3px ;
+ }
+ 
+ .postbox{
+    border-left:solid 5px #82e0ef;
+    padding-left:15px;
+    line-height:0.6em;
+    margin-bottom:35px;
+    padding-top:0px;
+ }
+ 
+ .postbox:hover{
+    background-color:#e6ffff;
+    border-left-color:#13A944;
+ }
+ 
+ .posttitle{
+    font-weight:600;
+    margin:0px;
+    border-bottom:solid 2px #9ADAAF;
+    padding-top:10px;
+    padding-bottom:13px;
+    font-size:1.4em;
+ }
+ 
+ .footercontainer{
+    margin-top:50px;
+    border-top:solid 5px #e0e0e0;
+    opacity:0.85;
+    padding-top:30px;
+ }
+ 
+ .footernavbarcontainer{
+    display:flex;
+    flex-direction:column;
+    width:200px;
+    justify-content: flex-start;
+ }
+ 
+ .footernavbarcontainer > a{
+    border-bottom:none;
+    text-align:left;
+    color:#535353;
+    border-bottom: dotted 1px #BCE6CA;
+    font-size:0.85em;
+ }
+ 
+ .footerlogo{
+    width:120px;
+    display:inline;
+ }
+ 
+ .signincontainer{
+    text-align:center;
+    width:100%;
+    display:flex;
+ }

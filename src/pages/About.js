@@ -1,7 +1,13 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+const About = (props) => {
 
 
+  return (
+    <div>
+      <h1 className="pageheader">About</h1>
+
+
+    </div>
+  )
+};
+
+export default About;

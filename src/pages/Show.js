@@ -25,12 +25,21 @@ function Show(props) {
 
    return (
            <div className="person">
-   <h1>Edit Your Profile</h1>
-              <h1>{singleuser.displayname}</h1>
+
+<h1>{singleuser.displayname}</h1>
+              <div className="profileContainer">
+               <div className="profileLeftSide"></div>
+               <div className="profileRightSide"></div>
+
+              </div>
+  
+             
               <h2>{singleuser.email}</h2>
            
               <button id="delete" onClick={removeUser}>DELETE</button>
            
+
+            <h1>Edit Your Profile</h1>
               <form onSubmit={handleSubmit}>
            
                  <input
